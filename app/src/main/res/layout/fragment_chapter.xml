@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        >
+        <ImageView
+            android:id="@+id/img_chapter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chap"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BC2C2C2E"
+            android:gravity="center"
+            android:text="One Punch Man"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Số chương "
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/botron"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_chapter"
+            />
+
+    </LinearLayout>
+
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="500dp"-->
+<!--        "-->
+<!--        />-->
+
+</LinearLayout>

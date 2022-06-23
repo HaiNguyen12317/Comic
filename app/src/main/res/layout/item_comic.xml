@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="s"
+            type="com.example.adapter.view.fragment.ChapterFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_margin="5dp"
+        android:onClick="@{()->s."
+        >
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_avt"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:lines="1"
+            android:id="@+id/tv_title"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</layout>

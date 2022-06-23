@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@+id/loginActivity">
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.adapter.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" >
+        <action
+            android:id="@+id/action_loginActivity_to_deXuatFragment"
+            app:destination="@+id/deXuatFragment" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </activity>
+
+    <fragment
+        android:id="@+id/deXuatFragment"
+        android:name="com.example.adapter.view.fragment.DeXuatFragment"
+        android:label="DeXuatFragment" >
+        <action
+            android:id="@+id/action_deXuatFragment_to_chapterFragment"
+            app:destination="@id/chapterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chapterFragment"
+        android:name="com.example.adapter.view.fragment.ChapterFragment"
+        android:label="ChapterFragment" >
+        <action
+            android:id="@+id/action_chapterFragment_to_chapFragment"
+            app:destination="@id/chapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chapFragment"
+        android:name="com.example.adapter.view.fragment.ChapFragment"
+        android:label="ChapFragment" />
+    <activity
+        android:id="@+id/comicActivity"
+        android:name="com.example.adapter.ComicActivity"
+        android:label="ComicActivity" />
+
+</navigation>
